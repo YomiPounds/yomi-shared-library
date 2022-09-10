@@ -11,7 +11,7 @@ pipeline{
                 sh 'java -version'
             }
         }
-        stage("checkout code"){
+        stage('checkout-code'){
             steps{
                 git branch: 'main',
                        url: "${repoUrl}"
